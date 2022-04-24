@@ -2,7 +2,7 @@ const BackgroundImage = document.querySelector('.BackgroundImage')
 const PercentText = document.querySelector('.PercentText')
 
 let LoadNumber = 0
-let Interval = setInterval(BlurEffect, 20)
+let Interval = setInterval(BlurEffect, 30)
 
 function BlurEffect() {
     if (LoadNumber < 100) {
@@ -11,7 +11,7 @@ function BlurEffect() {
 
         PercentText.innerText = `${LoadNumber}%`
         PercentText.style.opacity = ScaleBlur(`${LoadNumber}`, 0, 100, 1, 0)
-        BackgroundImage.style.opacity = ScaleBlur(`${LoadNumber}`, 0, 100, 0, 1)
+        BackgroundImage.style.opacity = ScaleBlur(`${LoadNumber}`, 0, 100, .2, 1)
     }
 }
 
