@@ -12,7 +12,7 @@ function BlurEffect() {
         PercentText.innerText = `${LoadNumber}%`
         PercentText.style.opacity = ScaleBlur(LoadNumber, 0, 100, 1, 0)
         // BackgroundImage.style.opacity = ScaleBlur(`${LoadNumber}`, 0, 100, .2, 1)
-        BackgroundImage.style.filter = `blur(${ScaleBlur(LoadNumber, 0, 100, 30, 0)}px)`
+        BackgroundImage.style.filter = `blur(${ScaleBlur(LoadNumber, 0, 100, 20, 0)}px)`
     }
 }
 
