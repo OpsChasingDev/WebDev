@@ -16,7 +16,7 @@ body {
     margin: 0;
 }
 
-.background {
+.BackgroundImage {
     background: url('Support/PowerShell_Model.png') no-repeat center center/cover;
     position: absolute;
     top: 0;
@@ -27,7 +27,7 @@ body {
     filter: blur(0px);    
 }
 
-.loading-text {
+.PercentText {
     font-size: 100px;
     color: cadetblue;
 }
