@@ -10,6 +10,11 @@ function BlurEffect() {
         console.log(LoadNumber)
 
         PercentText.innerText = `${LoadNumber}%`
-        PercentText.style.opacity = .5
+        PercentText.style.opacity = ScaleBlur(`${LoadNumber}`, 0, 100, 1, 0)
+        BackgroundImage.style.opacity = ScaleBlur(`${LoadNumber}`, 0, 100, 0, 1)
     }
+}
+
+const ScaleBlur = (num, inMin, inMax, outMin, outMax) => {
+    return (num - inMin) * (outMax - outMin) / (inMax - inMin) + outMin
 }
