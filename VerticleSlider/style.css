@@ -57,8 +57,12 @@ body {
     width: 100%;
 }
 
-.SliderButtons {
-    
+button {
+    color: lightslategray;
+    border: none;
+    padding: 20px;
+    font-size: 18pt;
+    background-color: beige;
 }
 
 .SliderContainer .SliderButtons button {
@@ -66,4 +70,12 @@ body {
     left: 30%;
     top: 50%;
     z-index: 100;
+}
+
+.ButtonDown {
+    transform: translateX(-100%) translateY(50%);
+}
+
+.ButtonUp {
+    transform: translateY(-50%)
 }
