@@ -1,17 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh
+}
+
+.SliderContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.SliderLeft {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.SliderLeft > div {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 50vw;
-    overflow: hidden;
-    margin: 0;
+}
+
+.SliderLeft h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.SliderRight {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 70%;
+}
+
+.SliderRight > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
 }
